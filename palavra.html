@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Palavra Repetida</title>
+</head>
+<body>
+    <ul id="palavraRepetidaLista"></ul>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            var lista = document.getElementById("palavraRepetidaLista");
+            var palavra = "Te amo"; // Substitua "Palavra" pela palavra desejada
+
+            for (var i = 0; i < 1000; i++) {
+                var item = document.createElement("li");
+                item.textContent = palavra;
+                lista.appendChild(item);
+            }
+        });
+    </script>
+</body>
+</html>
